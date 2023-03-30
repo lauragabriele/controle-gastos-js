@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>Controle de Gastos</title>
 </head>
 
@@ -15,22 +16,30 @@
   </header>
   <main class="container"> 
     <section id="balance">
-        <h2>Balanço</h2>
       <div class="card">
-        <h3>Entradas</h3>
+        <h3>Entradas
+          <span class="material-symbols-outlined" id="prohibited"> 
+            arrow_upward
+          </span>
+        </h3>
         <p>R$ 5.000,00</p>
       </div>
       <div class="card">
-        <h3>Saídas</h3>
+        <h3>Saídas
+          <span class="material-symbols-outlined" id="outings">arrow_downward</span>
+        </h3>
         <p>R$ 2.000,00</p>
       </div>
       <div class="card total">
-        <h3>Total</h3>
+        <h3>Total
+          <span class="material-symbols-outlined" id="total">attach_money</span>
+        </h3>
         <p>R$ 3.000,00</p>
       </div>
     </section>
     <section id="transaction">
       <h2>Transações</h2>
+      <a href="#" class="button new">+ Nova transação</a>
       <table id="data-table">
       <thead>
         <tr>
@@ -41,19 +50,28 @@
       </thead>
       <tbody>
         <tr>
-          <td>Luz</td>
-          <td>-R$ 500,00</td>
-          <td>23/01/2023</td>
+          <td class="description">Luz</td>
+          <td class="expense">-R$ 500,00</td>
+          <td class="date">23/01/2023</td>
+          <td>
+            <span class="material-symbols-outlined" id="remove">remove</span>
+          </td>
         </tr>
         <tr>
-          <td>Internet</td>
-          <td>-R$ 100,00</td>
-          <td>23/01/2023</td>
+          <td class="description">Internet</td>
+          <td class="expense">-R$ 100,00</td>
+          <td class="date">23/01/2023</td>
+          <td>
+            <span class="material-symbols-outlined" id="remove">remove</span>
+          </td>
         </tr>
         <tr>
-          <td>Água</td>
-          <td>-R$ 150,00</td>
-          <td>23/01/2023</td>
+          <td class="description">Água</td>
+          <td class="expense">-R$ 150,00</td>
+          <td class="date">23/01/2023</td>
+          <td>
+            <span class="material-symbols-outlined" id="remove">remove</span>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -63,6 +81,15 @@
   <footer>
 
   </footer>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+    }
+    </style>
 </body>
 
 </html>
